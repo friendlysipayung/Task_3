@@ -30,11 +30,37 @@ int main()
     cin>>pil;
     switch(pil)
     {
+    case 3:
+    system("cls");
+    cout<<"INPUT DATA CUSTOMER"<<endl;
+    cout<<"-------------------"<<endl;
+    cout<<"input ID_customer : ";
+    cin>>x.ID_customer;
+    cout<<"input nama        : ";
+    cin>>x.nama;
+    cout<<"input no hp       : ";
+    cin>>x.no_hp;
+    cout<<"input alamat      : ";
+    cin>>x.alamat;
+    cout<<"input email      : ";
+    cin>>x.email;
+    p = alokasi(x);
+    p->next=NULL;
+    InsertAfter (&l,q,p);
+    break;
     case 4:
     deleteFirst (&l,p);
     break;
     case 5:
     deleteLast (&l,p);
+    break;
+    case 6:
+    deleteAfter (&l,q,p);
+    break;
+    case 8:
+    insertionsort(l);
+    cout<<"Data telah diurutkan !!"<<endl;
+    getch();
     break;
     }
     }
