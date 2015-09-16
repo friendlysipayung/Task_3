@@ -20,7 +20,11 @@ struct list
     address first;
 };
 
+void InsertAfter (list *l,address q, address p);
+
 void deleteFirst (list *l, address p);
 void deleteLast (list *l, address p);
+void deleteAfter (list *l,address q, address p);
 
+void insertionsort(list l);
 #endif // LIST_H_INCLUDED
