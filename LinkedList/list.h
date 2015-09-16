@@ -24,6 +24,4 @@ void InsertAfter (list *l,address q, address p);
 void deleteAfter (list *l,address q, address p);
 void insertionsort(list l);
 
-
-
 #endif // LIST_H_INCLUDED
